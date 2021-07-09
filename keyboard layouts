@@ -19,3 +19,18 @@ Section "InputClass"
 	Option "XkbVariant" "qwerty, "
 	Option "XkbOptions" "grp:rctrl_rshift_toggle"
 EndSection
+
+
+# version 3
+
+# cat /etc/X11/xorg.conf.d/10-keyboard.conf
+Section "InputClass"
+	Identifier "any value works here"
+	MatchIsKeyboard "on"	# Limit these settings to keyboards
+#	Driver "libinput"
+	# Keyboard layout - comma-separated list for multiple layouts
+	Option "XkbLayout" "en,he"
+	# Keyboard variant - comma-separated list matching XkbLayout line
+# 	Option "XkbVariant" "qwerty"
+	Option "XkbOptions" "grp:alt_shift_toggle"
+EndSection
