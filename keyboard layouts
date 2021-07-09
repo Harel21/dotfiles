@@ -1,4 +1,1 @@
-# Enter the two lines into the terminal
-
-alias ~="setxkbmap us"
-alias il="setxkbmap il"
+#TODO: enable lango change
