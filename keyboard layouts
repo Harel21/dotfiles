@@ -8,3 +8,14 @@ Section "InputClass"
         Option "XkbVariant" "qwerty,"
         Option "XkbOptions" "grp:alt_shift_toggle"
 EndSection
+
+
+# version 2
+
+Section "InputClass"
+	Identifier "system-keyboard"
+	MatchIsKeyboard "yes"
+	Option "XkbLayout" "us, il"
+	Option "XkbVariant" "qwerty, "
+	Option "XkbOptions" "grp:rctrl_rshift_toggle"
+EndSection
